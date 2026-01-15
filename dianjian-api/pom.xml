@@ -1,0 +1,42 @@
+<?xml version="1.0"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+		 xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+		 xsi:schemaLocation="http://maven.apache.org/POM/4.0.0
+            http://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+	<parent>
+		<groupId>com.lanshen</groupId>
+		<artifactId>dianjian</artifactId>
+		<version>5.11.1</version>
+	</parent>
+
+	<artifactId>dianjian-api</artifactId>
+
+	<dependencies>
+		<!-- 连表查询注解 -->
+		<dependency>
+			<groupId>com.github.yulichang</groupId>
+			<artifactId>mybatis-plus-join-annotation</artifactId>
+		</dependency>
+		<!--core 工具类-->
+		<dependency>
+			<groupId>com.lanshen</groupId>
+			<artifactId>inspection-common-core</artifactId>
+		</dependency>
+		<!--mybatis plus spring,包含了mybatis plus core-->
+		<dependency>
+			<groupId>com.baomidou</groupId>
+			<artifactId>mybatis-plus-spring</artifactId>
+		</dependency>
+		<!--feign 工具类-->
+		<dependency>
+			<groupId>com.lanshen</groupId>
+			<artifactId>inspection-common-feign</artifactId>
+		</dependency>
+		<!-- excel 导入导出 -->
+		<dependency>
+			<groupId>com.lanshen</groupId>
+			<artifactId>inspection-common-excel</artifactId>
+		</dependency>
+	</dependencies>
+</project>

@@ -1,0 +1,25 @@
+server:
+  port: 6060
+
+spring:
+  application:
+    name: dianjian-biz
+  cloud:
+    nacos:
+      username: nacos
+      password: nacos
+      discovery:
+        server-addr: ${NACOS_HOST:inspection-register}:${NACOS_PORT:8848}
+      config:
+        server-addr: ${spring.cloud.nacos.discovery.server-addr}
+  config:
+    import:
+      - optional:nacos:application-dev.yml
+      - optional:nacos:${spring.application.name}-dev.yml
+#  datasource:
+#    type: com.alibaba.druid.pool.DruidDataSource
+#    druid:
+#      driver-class-name: com.mysql.cj.jdbc.Driver
+#      username: root
+#      password: Ls@123456
+#      url: jdbc:mysql://127.0.0.1:13306/dianjian?characterEncoding=utf8&zeroDateTimeBehavior=convertToNull&useSSL=false&useJDBCCompliantTimezoneShift=true&useLegacyDatetimeCode=false&serverTimezone=GMT%2B8&allowMultiQueries=true
