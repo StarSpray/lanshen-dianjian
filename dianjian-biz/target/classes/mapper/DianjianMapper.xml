@@ -7,6 +7,6 @@
         <id property="id" column="id"/>
         <result property="username" column="username"/>
         <result property="password" column="password"/>
-        <result property="delFlag" column="del_flag"/>
+        <result property="delFlag" column="del_Flag"/>
   </resultMap>
 </mapper>

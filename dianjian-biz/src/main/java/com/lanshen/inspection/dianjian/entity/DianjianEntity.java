@@ -42,7 +42,7 @@ public class DianjianEntity extends Model<DianjianEntity> {
 	* 删除标记
 	*/
     @TableLogic
-	@TableField(fill = FieldFill.INSERT)
+	@TableField(value = "del_Flag",fill = FieldFill.INSERT)
     @Schema(description="删除标记")
     private String delFlag;
 }
